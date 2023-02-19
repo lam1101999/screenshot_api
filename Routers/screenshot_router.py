@@ -7,7 +7,7 @@ screenshot = ScreenshotService()
 
 router = APIRouter()
 
-@router.post("/firstpage/")
+@router.post("/firstpage")
 async def screenshot_first_page(url:str):
     """Routing for taking the first screen shot
 
@@ -21,7 +21,7 @@ async def screenshot_first_page(url:str):
     response = Response(image, media_type = "image/png")
     return response
 
-@router.post("/entirepage/")
+@router.post("/entirepage")
 async def screenshot_entire_page(url:str):
     """routing for taking entire screenshot
 
