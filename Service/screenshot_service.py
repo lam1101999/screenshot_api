@@ -15,8 +15,8 @@ class ScreenshotService():
         options.add_argument('headless')
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
-        ChromeDriverManager().install()
-        self.driver = webdriver.Chrome(options = options)
+        path_driver = ChromeDriverManager().install()
+        self.driver = webdriver.Chrome(path_driver, options = options)
 
     def screenshot_first_page(self, url):
         """Get the first screen shot of website

@@ -8,7 +8,7 @@ app = FastAPI()
 app.include_router(screenshot_router.router)
 
 
-@app.get("/homepage")
+@app.get("/")
 async def homepage():
     """Welcome page
 
