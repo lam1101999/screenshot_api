@@ -1,7 +1,7 @@
 """Router for getting screenshot of website"""
 
 from fastapi import APIRouter, Response
-from Service.screenshot_service import ScreenshotService
+from service.screenshot_service import ScreenshotService
 
 screenshot = ScreenshotService()
 

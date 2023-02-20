@@ -1,7 +1,7 @@
 "Main module"
 import uvicorn
 from fastapi import FastAPI
-from Routers import screenshot_router
+from routers import screenshot_router
 
 
 app = FastAPI()
